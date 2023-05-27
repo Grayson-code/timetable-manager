@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host=0.0.0.0",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
@@ -31,5 +31,15 @@
 		"vite": "^4.3.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@dicebear/avataaars": "^6.0.4",
+		"@dicebear/avatars": "^4.10.8",
+		"@dicebear/micah": "^6.0.4",
+		"firebase": "^9.22.1",
+		"firebase-admin": "^11.8.0",
+		"moment": "^2.29.4",
+		"svelte-routing": "^1.8.9",
+		"unique-names-generator": "^4.7.1"
+	}
 }
