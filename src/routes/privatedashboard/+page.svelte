@@ -3,7 +3,7 @@
 	import { auth } from '../../lib/firebase/firebase.client';
 	import { authHandlers, authStore } from '../../stores/authStore';
 
-	let email;
+	let email = "";
 	authStore.subscribe((curr) => {
 		console.log('CURR', curr);
 		email = curr?.currentUser?.email;

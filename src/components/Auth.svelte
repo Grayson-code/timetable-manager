@@ -48,36 +48,43 @@
 	</form>
 	{#if register}
 		<div
+
 			on:click={() => {
 				register = false;
 			}}
 			on:keydown={() => {}}
 		>
 			Already have an account?
-			<p>Log in</p>
+			<span class="login-text">Log in</span>
 		</div>
 	{:else}
 		<div
+			class="dont-have-account-text"
 			on:click={() => {
 				register = true;
 			}}
 			on:keydown={() => {}}
 		>
-			Don't have an account? <p>Sign Up</p>
+			Don't have an account? <span class="signup-text">Sign Up</span>
 		</div>
 		<div
 			on:click={() => {
-				authHandlers.resetPassword(email)
+				authHandlers.resetPassword(email);
 			}}
 			on:keydown={() => {}}
+			class="forgot-password-text"
 		>
 			Forgot Password?
 		</div>
 	{/if}
 </div>
 
-      <style>
+<style>
+	:global(body) {
+		margin: 0;
+	}
 	.container {
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -97,8 +104,8 @@
 		margin-bottom: 20px;
 	}
 
-	input[type="email"],
-	input[type="password"] {
+	input[type='email'],
+	input[type='password'] {
 		width: 100%;
 		padding: 10px;
 		margin-bottom: 20px;
@@ -118,26 +125,37 @@
 		font-weight: bold;
 		cursor: pointer;
 		margin-bottom: 20px;
+		margin-left: 10px;
 	}
 
-	.container div {
-		color: #ffffff;
+
+	.forgot-password-text,
+	.dont-have-account-text {
+		color: white;
 		margin-bottom: 10px;
 		cursor: pointer;
+		margin-left: 23px;
 	}
 
-	.container div p {
+	.forgot-password-text {
+		text-decoration: underline;
+	}
+
+	.signup-text {
 		display: inline;
+		text-decoration: underline;
 		color: #f863f0;
 	}
+
+
 
 	@media only screen and (max-width: 600px) {
 		.container {
 			padding: 10px;
 		}
 
-		input[type="email"],
-		input[type="password"] {
+		input[type='email'],
+		input[type='password'] {
 			margin-bottom: 10px;
 		}
 
@@ -145,4 +163,4 @@
 			margin-bottom: 10px;
 		}
 	}
-      </style>
+</style>
