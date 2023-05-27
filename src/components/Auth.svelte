@@ -76,17 +76,73 @@
 	{/if}
 </div>
 
-<style>
+      <style>
 	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		flex: 1;
+		background-color: #01010f;
+		padding: 20px;
 	}
 
 	.container form {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.container h1 {
+		color: #ffffff;
+		margin-bottom: 20px;
+	}
+
+	input[type="email"],
+	input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border: 1px solid #f863f0;
+		background-color: #01010f;
+		color: #ffffff;
+	}
+
+	button {
+		width: 100%;
+		padding: 10px;
+		border-radius: 5px;
+		border: none;
+		background-color: #b563f8;
+		color: #ffffff;
+		font-weight: bold;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+
+	.container div {
+		color: #ffffff;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+
+	.container div p {
+		display: inline;
+		color: #f863f0;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.container {
+			padding: 10px;
+		}
+
+		input[type="email"],
+		input[type="password"] {
+			margin-bottom: 10px;
+		}
+
+		button {
+			margin-bottom: 10px;
+		}
 	}
       </style>
