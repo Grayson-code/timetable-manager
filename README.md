@@ -1,3 +1,14 @@
+# Functionality To Implement 
+For students
+
+1.login and signup authentication (status ✓)
+
+2.dashboard for students where thay can view their classes schedule , announcement, tasks etc, can also provide information of each class, such as the subject, teacher, classroom/location,
+
+4.Communication and Discussion:  its like a chat where user can ask their doubts to teacher 
+
+**These are the ideas that have to be implemented in the project for students maybe we can add more later**
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
