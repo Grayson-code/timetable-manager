@@ -54,7 +54,7 @@
 			}}
 			on:keydown={() => {}}
 		>
-			Already have an account?
+			<p class="fontsize" >Already have an account?</p>
 			<span class="login-text">Log in</span>
 		</div>
 	{:else}
@@ -113,6 +113,8 @@
 		border: 1px solid #f863f0;
 		background-color: #01010f;
 		color: #ffffff;
+    margin-left:10px;
+    box-sizing: border-box;
 	}
 
 	button {
@@ -138,16 +140,28 @@
 	}
 
 	.forgot-password-text {
-		text-decoration: underline;
+		text-decoration:none;
+    color: #f863f0;
 	}
+  
+  .login-text {
+    display:inline;
+    text-decoration:none;
+    color: #f863f0;
+    font-size: 15px;
+  }
 
 	.signup-text {
 		display: inline;
-		text-decoration: underline;
+		text-decoration:none;
 		color: #f863f0;
 	}
 
-
+  .fontsize{
+    display:inline;
+    font-size: 15px;
+    margin-left:26px;
+  }
 
 	@media only screen and (max-width: 600px) {
 		.container {
