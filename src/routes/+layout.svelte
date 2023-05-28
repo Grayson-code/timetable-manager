@@ -29,9 +29,15 @@
 </main>
 
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 	.mainContainer {
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
+	}
+	:global(body) {
+		margin: 0;
+		font-family: 'Roboto', Arial;
+		background-color: #01010f;
 	}
 </style>
