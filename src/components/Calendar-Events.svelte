@@ -91,6 +91,7 @@
     in:fade
     out:fade
     on:click={() => clearScheduler()}
+    on:keydown={() => {}}
   />
 {/if}
 
