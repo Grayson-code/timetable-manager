@@ -5,10 +5,14 @@
  https://opensource.org/licenses/MIT
 -->
 
-<script>
+<script lang="ts">
     import InboxIcon from "$lib/assets/inbox.svg"
     import TodayIcon from "$lib/assets/today.svg"
     import TomorrowIcon from "$lib/assets/Tomorrow.svg"
+    import { authStore } from "../../stores/authStore";
+    import type { CurrentUser } from "../../app";
+
+    const user: null | CurrentUser = $authStore.currentUser
 </script>
 
 <body>
