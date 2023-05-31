@@ -3,6 +3,7 @@ import { deleteApp, getApp, getApps, initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getAuth } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -24,4 +25,5 @@ if (!getApps().length) {
     firebaseApp = initializeApp(firebaseConfig)
 }
 
+export const db = getFirestore()
 export const auth = getAuth(firebaseApp)
